@@ -1,0 +1,21 @@
+{{!-- display name, image, and button (or link) --}}
+
+<div class="artist">
+  {{#each artists.items}}
+
+    <div class="card">
+      <img class="card-img" src= "{{this.images.0.url}}" alt="artist image" style="width: 15%;">
+      <div class="card-body">
+        <h5 class="card-title">        
+            {{this.name}}        
+        </h5>
+        <button>
+          {{!-- <a class="card-link" href="{{this.external_urls.spotify}}">View Albums</a> --}}
+          <a class="card-link" href="/albums/{{this.id}}">View Albums</a>
+        </button>                
+      </div>
+    </div>
+
+  {{/each}}    
+    
+</div>

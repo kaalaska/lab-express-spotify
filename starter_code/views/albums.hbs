@@ -1,0 +1,19 @@
+{{!-- display name, cover and button/link to see the tracks of each album, the link to the tracks page should have each album's id in it --}}
+<div class="album">
+  {{#each items}}
+    <div class="card" >
+      <img class="card-img" src= "{{this.images.0.url}}" alt="album image" style="width: 15%;">
+      <div class="card-body">
+        <h5 class="card-title">        
+            {{this.name}}        
+        </h5>
+        <button>
+          {{!-- <a class="card-link" href="{{this.external_urls.spotify}}">View Tracks</a> --}}
+          <a class="card-link" href="/tracks/{{this.id}}">View Tracks</a>
+        </button>                
+      </div>
+    </div>
+    
+  {{/each}}    
+    
+</div>

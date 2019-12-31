@@ -1,0 +1,58 @@
+
+.background {
+    background-image: url(/images/home_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    height: 50vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.search-box {
+    background: rgba(245,243,240,0.5);    
+    height: 15rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;    
+}
+
+.search-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;    
+}
+
+.search-items input {
+    margin-bottom: 1rem;
+    width: 50%;    
+}
+
+button {
+  background-color: rgb(214, 9, 29);
+  color: white;
+  font-family: 'Poppins';
+  padding: 10px 15px;
+  border: none;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    color: blue;
+    justify-content: flex-start;    
+}
+
+.card-img {
+   object-fit: contain;
+   object-position: left;
+  border: yellow;
+   border-style: dotted;
+}
